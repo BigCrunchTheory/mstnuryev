@@ -1,8 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:mstnuryev/domain/entities/subscription_entity.dart';
 
-/// Base class for subscription events
-/// Following the event-driven pattern in BLoC architecture
 abstract class SubscriptionEvent extends Equatable {
   const SubscriptionEvent();
 

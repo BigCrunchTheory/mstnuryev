@@ -11,7 +11,7 @@ class SubscriptionOptionCard extends StatefulWidget {
   final VoidCallback onTap;
 
   const SubscriptionOptionCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.price,
     required this.period,
@@ -20,7 +20,7 @@ class SubscriptionOptionCard extends StatefulWidget {
     required this.isSelected,
     required this.onTap,
     this.showRecommended = false,
-  }) : super(key: key);
+  });
 
   @override
   State<SubscriptionOptionCard> createState() => _SubscriptionOptionCardState();
@@ -79,7 +79,7 @@ class _SubscriptionOptionCardState extends State<SubscriptionOptionCard>
             boxShadow: widget.isSelected
                 ? [
                     BoxShadow(
-                      color: Colors.blue.withOpacity(0.2),
+                      color: Colors.blue.withValues(alpha: 0.2),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),

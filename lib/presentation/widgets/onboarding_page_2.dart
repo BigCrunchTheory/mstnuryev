@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 class OnboardingPage2 extends StatelessWidget {
   final VoidCallback onContinue;
 
-  const OnboardingPage2({
-    Key? key,
-    required this.onContinue,
-  }) : super(key: key);
+  const OnboardingPage2({super.key, required this.onContinue});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +20,7 @@ class OnboardingPage2 extends StatelessWidget {
             width: 100,
             height: 100,
             decoration: BoxDecoration(
-              color: Colors.green.withOpacity(0.1),
+              color: Colors.green.withValues(alpha: 0.1),
               shape: BoxShape.circle,
             ),
             child: Icon(

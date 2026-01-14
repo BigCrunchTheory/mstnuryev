@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mstnuryev/presentation/bloc/subscription_bloc.dart';
-import 'package:mstnuryev/presentation/bloc/subscription_event.dart';
 import 'package:mstnuryev/presentation/widgets/onboarding_page_1.dart';
 import 'package:mstnuryev/presentation/widgets/onboarding_page_2.dart';
 

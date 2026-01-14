@@ -38,11 +38,11 @@ class MyApp extends StatelessWidget {
   final SubscriptionRepositoryImpl repository;
 
   const MyApp({
-    Key? key,
+    super.key,
     required this.getSubscriptionStatus,
     required this.saveSubscription,
     required this.repository,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

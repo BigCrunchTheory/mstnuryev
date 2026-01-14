@@ -2,14 +2,10 @@ import 'package:mstnuryev/domain/entities/subscription_entity.dart';
 
 class SubscriptionModel extends SubscriptionEntity {
   const SubscriptionModel({
-    required bool isPurchased,
-    String? subscriptionType,
-    DateTime? purchaseDate,
-  }) : super(
-    isPurchased: isPurchased,
-    subscriptionType: subscriptionType,
-    purchaseDate: purchaseDate,
-  );
+    required super.isPurchased,
+    super.subscriptionType,
+    super.purchaseDate,
+  });
 
   /// Factory constructor for creating a model from JSON
   factory SubscriptionModel.fromJson(Map<String, dynamic> json) {

@@ -16,7 +16,7 @@ import 'package:mstnuryev/presentation/screens/splash_screen.dart';
 /// - Paywall: Purchase screen
 /// - Main: Post-purchase app content
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -159,10 +159,8 @@ class _OnboardingPaywallFlowState extends State<_OnboardingPaywallFlow>
   }
 }
 
-/// Widget managing the main app flow after purchase
-/// This displays the main content screen
 class _MainAppFlow extends StatelessWidget {
-  const _MainAppFlow({Key? key}) : super(key: key);
+  const _MainAppFlow({super.key});
 
   void _handleLogout(BuildContext context) {
     // Clear subscription and show onboarding again

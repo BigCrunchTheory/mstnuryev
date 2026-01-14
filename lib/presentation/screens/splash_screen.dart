@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// Splash screen
 /// This is shown while the app initializes and checks subscription status
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
